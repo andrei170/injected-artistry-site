@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Med Spa &amp; IV Therapy in Monterey, CA | Botox, Fillers &amp; Wellness | Injected Artistry</title>
+<meta name="description" content="Injected Artistry is Monterey's nurse-led med spa and IV Lounge. Botox, fillers, IV hydration, peptides, weight loss and aesthetics, in-lounge or mobile to Carmel, Pebble Beach &amp; Pacific Grove. Founded 2012. Book today." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://injectedartistry.com/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Med Spa &amp; IV Therapy in Monterey, CA | Injected Artistry" />
+<meta property="og:description" content="Nurse-led med spa &amp; IV Lounge serving the Monterey Peninsula. Botox, fillers, IV drips, peptides &amp; aesthetics, in-lounge or mobile." />
+<meta property="og:image" content="https://injectedartistry.com/wp-content/uploads/2022/04/injected_artistry_cover_mj-1.jpg" />
+<meta property="og:url" content="https://injectedartistry.com/" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --navy:#14264a;
+    --blue:#1d3d78;
+    --blue-light:#8ba6d9;
+    --gold:#c2a25f;
+    --gold-soft:#d9c08a;
+    --cream:#f7f4ee;
+    --paper:#fbfaf7;
+    --ink:#1a1f2e;
+    --muted:#5b6373;
+    --line:rgba(20,38,74,.12);
+    --shadow:0 18px 50px -20px rgba(20,38,74,.35);
+    --radius:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.12;letter-spacing:.2px}
+  h2{font-size:clamp(2rem,4.4vw,3.4rem);color:var(--navy)}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  .eyebrow{
+    font-family:'Inter';font-size:.74rem;font-weight:600;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--gold);margin-bottom:14px;
+  }
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:.94rem;
+    padding:15px 30px;border-radius:999px;transition:.25s ease;cursor:pointer;border:none;letter-spacing:.01em;
+  }
+  .btn-gold{background:var(--gold);color:#fff;box-shadow:0 10px 24px -10px rgba(194,162,95,.7)}
+  .btn-gold:hover{background:#b3914e;transform:translateY(-2px)}
+  .btn-outline{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.55)}
+  .btn-outline:hover{background:#fff;color:var(--navy);border-color:#fff}
+  .btn-navy{background:var(--navy);color:#fff}
+  .btn-navy:hover{background:var(--blue);transform:translateY(-2px)}
+  section{padding:96px 0}
+
+  /* NAV */
+  header{position:sticky;top:0;z-index:50;background:rgba(251,250,247,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+  .brand{display:flex;align-items:center;gap:13px}
+  .brand-mark{
+    width:42px;height:42px;border-radius:50%;background:var(--navy);color:var(--gold-soft);
+    display:grid;place-items:center;font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;
+  }
+  .brand-name{font-family:'Cormorant Garamond',serif;font-size:1.45rem;color:var(--navy);font-weight:600;letter-spacing:.3px;line-height:1}
+  .brand-sub{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:600}
+  .nav-links{display:flex;gap:30px;align-items:center}
+  .nav-links a{font-size:.9rem;font-weight:500;color:var(--ink);transition:.2s}
+  .nav-links a:hover{color:var(--gold)}
+  .nav-cta{display:flex;align-items:center;gap:14px}
+  .nav-phone{font-weight:600;color:var(--navy);font-size:.92rem}
+  .burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer}
+  .burger span{width:24px;height:2px;background:var(--navy)}
+
+  /* HERO */
+  .hero{position:relative;min-height:88vh;display:flex;align-items:center;color:#fff;overflow:hidden}
+  .hero-bg{position:absolute;inset:0;
+    background:linear-gradient(110deg,rgba(15,26,52,.93) 0%,rgba(20,38,74,.78) 45%,rgba(29,61,120,.55) 100%),
+    url('https://injectedartistry.com/wp-content/uploads/2022/04/injected_artistry_cover_mj-1.jpg') center/cover;
+  }
+  .hero .wrap{position:relative;z-index:2;padding-top:60px;padding-bottom:60px}
+  .hero-inner{max-width:720px}
+  .hero h1{font-size:clamp(2.8rem,6.4vw,5.2rem);color:#fff;margin:18px 0 22px}
+  .hero h1 em{font-style:italic;color:var(--gold-soft)}
+  .hero p.lead{font-size:1.22rem;color:rgba(255,255,255,.9);font-weight:300;max-width:560px;margin-bottom:34px}
+  .hero-cta{display:flex;gap:16px;flex-wrap:wrap}
+  .hero-trust{display:flex;gap:34px;margin-top:46px;flex-wrap:wrap;align-items:center}
+  .hero-trust .t{display:flex;flex-direction:column}
+  .hero-trust .t b{font-family:'Cormorant Garamond',serif;font-size:1.9rem;color:var(--gold-soft);line-height:1}
+  .hero-trust .t span{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.72);margin-top:5px}
+  .stars{color:var(--gold-soft);letter-spacing:2px}
+
+  /* MARQUEE / SERVICE-AREA BAR */
+  .areabar{background:var(--navy);color:rgba(255,255,255,.85);text-align:center;padding:18px 0;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase}
+  .areabar b{color:var(--gold-soft);font-weight:600}
+
+  /* INTRO */
+  .intro{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+  .intro-img{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5;background:linear-gradient(135deg,var(--blue),var(--navy))}
+  .intro-img img{width:100%;height:100%;object-fit:cover}
+  .intro p{color:var(--muted);margin-bottom:18px;font-size:1.05rem}
+  .sig{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.5rem;color:var(--navy);margin-top:8px}
+  .sig small{display:block;font-family:'Inter';font-style:normal;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-top:4px}
+
+  /* SERVICES */
+  .services{background:var(--cream)}
+  .sec-head{text-align:center;max-width:640px;margin:0 auto 56px}
+  .sec-head p{color:var(--muted);margin-top:14px;font-size:1.05rem}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .card{
+    background:#fff;border-radius:var(--radius);padding:34px 28px;border:1px solid var(--line);
+    transition:.3s ease;position:relative;overflow:hidden;
+  }
+  .card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+  .card .ic{width:62px;height:62px;border-radius:14px;background:var(--cream);display:grid;place-items:center;margin-bottom:18px}
+  .card .ic img{width:42px;height:42px;object-fit:contain}
+  .card h3{font-size:1.5rem;color:var(--navy);margin-bottom:8px}
+  .card p{color:var(--muted);font-size:.95rem}
+  .card .tag{position:absolute;top:22px;right:22px;font-size:.66rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);background:var(--cream);padding:5px 11px;border-radius:999px}
+
+  /* LOUNGE / EXPERIENCE */
+  .lounge{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+  .lounge .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+  .lounge h2{color:#fff}
+  .lounge h2 em{font-style:italic;color:var(--gold-soft)}
+  .lounge p{color:rgba(255,255,255,.82);font-size:1.08rem;margin:20px 0 28px}
+  .lounge ul{list-style:none;display:grid;gap:14px;margin-bottom:32px}
+  .lounge li{display:flex;gap:12px;align-items:flex-start;color:rgba(255,255,255,.9);font-size:1rem}
+  .lounge li::before{content:"";flex:none;width:9px;height:9px;border-radius:50%;background:var(--gold);margin-top:9px}
+  .lounge-img{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:1/1}
+  .lounge-img img{width:100%;height:100%;object-fit:cover}
+
+  /* TEAM */
+  .team-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:30px}
+  .lead-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:36px;display:flex;gap:24px;align-items:flex-start}
+  .lead-card .av{flex:none;width:84px;height:84px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--navy));color:var(--gold-soft);display:grid;place-items:center;font-family:'Cormorant Garamond',serif;font-size:2rem}
+  .lead-card h3{font-size:1.6rem;color:var(--navy)}
+  .lead-card .role{font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:4px 0 12px}
+  .lead-card p{color:var(--muted);font-size:.96rem}
+  .team-rest{text-align:center;color:var(--muted);font-size:.98rem}
+  .team-rest b{color:var(--navy)}
+
+  /* TESTIMONIALS */
+  .reviews{background:var(--cream)}
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .rev{background:#fff;border-radius:var(--radius);padding:30px;border:1px solid var(--line);display:flex;flex-direction:column}
+  .rev .stars{margin-bottom:14px;font-size:1.05rem}
+  .rev q{font-family:'Cormorant Garamond',serif;font-size:1.28rem;color:var(--ink);line-height:1.4;font-style:italic;quotes:none}
+  .rev .who{margin-top:auto;padding-top:18px;font-weight:600;color:var(--navy);font-size:.92rem}
+  .rev .who span{display:block;font-weight:400;color:var(--muted);font-size:.8rem}
+
+  /* SPECIALS */
+  .specials .wrap{background:linear-gradient(135deg,var(--navy),var(--blue));border-radius:26px;padding:60px 56px;color:#fff;position:relative;overflow:hidden}
+  .specials h2{color:#fff}
+  .spec-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 40px;margin-top:32px}
+  .spec-list .row{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.16)}
+  .spec-list .row span{color:rgba(255,255,255,.85)}
+  .spec-list .row b{color:var(--gold-soft);font-weight:600;white-space:nowrap}
+  .specials small{display:block;margin-top:24px;color:rgba(255,255,255,.6);font-size:.8rem}
+
+  /* LOCATIONS / CONTACT */
+  .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .loc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:38px}
+  .loc h3{font-size:1.7rem;color:var(--navy);margin-bottom:6px}
+  .loc .kind{font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:block}
+  .loc .line{display:flex;gap:11px;color:var(--muted);margin-bottom:11px;font-size:.96rem}
+  .loc .line b{color:var(--ink);font-weight:600}
+  .hours{margin-top:18px;border-top:1px solid var(--line);padding-top:18px}
+  .hours .h{display:flex;justify-content:space-between;font-size:.9rem;padding:5px 0;color:var(--muted)}
+  .hours .h b{color:var(--ink);font-weight:500}
+
+  /* FINAL CTA */
+  .final{background:var(--navy);color:#fff;text-align:center}
+  .final h2{color:#fff;max-width:680px;margin:0 auto 16px}
+  .final h2 em{font-style:italic;color:var(--gold-soft)}
+  .final p{color:rgba(255,255,255,.8);max-width:520px;margin:0 auto 32px;font-size:1.08rem}
+  .final .hero-cta{justify-content:center}
+
+  /* FOOTER */
+  footer{background:#0d1830;color:rgba(255,255,255,.62);padding:54px 0 30px;font-size:.88rem}
+  .foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.1)}
+  footer h4{color:#fff;font-family:'Inter';font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px;font-weight:600}
+  footer a{color:rgba(255,255,255,.62);display:block;margin-bottom:9px;transition:.2s}
+  footer a:hover{color:var(--gold-soft)}
+  .foot-brand .brand-name{color:#fff}
+  .foot-bottom{padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.78rem;color:rgba(255,255,255,.4)}
+
+  @media(max-width:900px){
+    .nav-links{display:none}
+    .intro,.lounge .wrap,.loc-grid,.team-grid{grid-template-columns:1fr}
+    .grid,.rev-grid{grid-template-columns:1fr 1fr}
+    .spec-list{grid-template-columns:1fr}
+    .foot-top{grid-template-columns:1fr 1fr}
+    section{padding:70px 0}
+    .hero{min-height:auto;padding:40px 0}
+  }
+  @media(max-width:600px){
+    .grid,.rev-grid{grid-template-columns:1fr}
+    .nav-phone{display:none}
+    .hero-trust{gap:22px}
+    .specials .wrap{padding:42px 26px}
+    .foot-top{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <div class="brand-mark">IA</div>
+      <div>
+        <div class="brand-name">Injected Artistry</div>
+        <div class="brand-sub">Med Spa &amp; IV Lounge</div>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#lounge">The IV Lounge</a>
+      <a href="#team">Our Team</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="nav-cta">
+      <span class="nav-phone">831-920-9359</span>
+      <a href="#visit" class="btn btn-gold">Book Now</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <div class="eyebrow">Monterey Peninsula &middot; Since 2012</div>
+      <h1>Beauty, wellness &amp; <em>artistry</em>, by nurses who care.</h1>
+      <p class="lead">Botox, fillers, IV hydration and advanced aesthetics, delivered in our private Monterey lounge or brought to your door across the Peninsula.</p>
+      <div class="hero-cta">
+        <a href="#visit" class="btn btn-gold">Book Your Visit</a>
+        <a href="tel:8319209359" class="btn btn-outline">Call or Text 831-920-9359</a>
+      </div>
+      <div class="hero-trust">
+        <div class="t"><b>5.0&#9733;</b><span>Across 30+ reviews</span></div>
+        <div class="t"><b>2012</b><span>Physician-founded</span></div>
+        <div class="t"><b>RN-led</b><span>Every treatment</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="areabar wrap-full">
+  <div class="wrap">Proudly serving <b>Monterey &middot; Carmel &middot; Carmel-by-the-Sea &middot; Pebble Beach &middot; Pacific Grove</b> &nbsp;&middot;&nbsp; in-lounge &amp; mobile</div>
+</div>
+
+<!-- ============ INTRO ============ -->
+<section class="wrap intro" id="about">
+  <div>
+    <div class="eyebrow">Where science meets self-care</div>
+    <h2>A med spa run like a clinic, with the warmth of a retreat.</h2>
+    <p>Injected Artistry was founded by registered nurse Jamie Slovenski and physician Dr. Ken Starr to bring genuine medical standards to aesthetics and wellness on the Monterey Peninsula. Every treatment is delivered by a licensed RN, under medical direction, in a space designed to feel calm and private.</p>
+    <p>From a single Botox visit to a full IV hydration ritual, you are cared for by people who treat your safety and your results with the same attention.</p>
+    <p class="sig">Jamie Slovenski, RN, BSN
+      <small>Founder &amp; CEO</small>
+    </p>
+  </div>
+  <div class="intro-img">
+    <img src="https://injectedartistry.com/wp-content/uploads/2022/04/injected_artistry_cover_mj-1.jpg" alt="Inside the Injected Artistry IV Lounge in Monterey" loading="lazy" />
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">What we offer</div>
+      <h2>Treatments tailored to you</h2>
+      <p>A full menu of aesthetic and wellness services, each delivered by a registered nurse under physician oversight.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="ic"><img src="https://injectedartistry.com/wp-content/uploads/2024/02/Peptides-Icon-1.png" alt="" /></div>
+        <span class="tag">Most booked</span>
+        <h3>Injectables</h3>
+        <p>Botox, Jeuveau and dermal fillers placed with an artist's eye for a refreshed, natural look that still moves like you.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><img src="https://injectedartistry.com/wp-content/uploads/2023/09/Oxygen.png" alt="" /></div>
+        <h3>IV Signature Drips</h3>
+        <p>Custom hydration and vitamin infusions to support energy, recovery and immunity, sipped in your own private suite.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><img src="https://injectedartistry.com/wp-content/uploads/2023/09/Light-Therapy-1.jpg" alt="" /></div>
+        <h3>Aesthetics &amp; Skincare</h3>
+        <p>Medical-grade facials, light therapy and skincare protocols built around your skin, not a one-size template.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><img src="https://injectedartistry.com/wp-content/uploads/2024/07/Hair-restoration.png" alt="" /></div>
+        <h3>Hair Restoration</h3>
+        <p>Advanced ALMA TED treatments to support fuller, healthier hair without surgery or downtime.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><img src="https://injectedartistry.com/wp-content/uploads/2023/09/Weight-Loss.png" alt="" /></div>
+        <h3>Weight &amp; Wellness</h3>
+        <p>Medically supervised weight programs, peptide therapy and hormone support to help you feel like yourself again.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><img src="https://injectedartistry.com/wp-content/uploads/2023/09/Ketamine-Therapy.png" alt="" /></div>
+        <h3>Restorative Therapies</h3>
+        <p>Oxygen therapy, infrared sauna, leg compression and more to round out a complete wellness visit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOUNGE ============ -->
+<section class="lounge" id="lounge">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Book the private space</div>
+      <h2>Make it a <em>moment</em>, not just an appointment.</h2>
+      <p>Whether it is a bridal party, a corporate retreat, a birthday or a wellness day with friends, our group IV experiences turn a treatment into a gathering. Private, relaxed and genuinely restorative.</p>
+      <ul>
+        <li>Private suite for you and your group</li>
+        <li>Custom drips chosen for each guest</li>
+        <li>Bridal, birthday &amp; corporate packages</li>
+        <li>Mobile option, brought to your venue</li>
+      </ul>
+      <a href="#visit" class="btn btn-gold">Reserve the Lounge</a>
+    </div>
+    <div class="lounge-img">
+      <img src="https://injectedartistry.com/wp-content/uploads/2022/04/injected_artistry_cover_mj-1.jpg" alt="The private IV Lounge by Injected Artistry" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEAM ============ -->
+<section class="wrap" id="team">
+  <div class="sec-head">
+    <div class="eyebrow">The people behind your care</div>
+    <h2>Led by a nurse and a physician</h2>
+    <p>Your results matter, and so does who is holding the syringe. At Injected Artistry, that is always a credentialed clinician.</p>
+  </div>
+  <div class="team-grid">
+    <div class="lead-card">
+      <div class="av">JS</div>
+      <div>
+        <h3>Jamie Slovenski</h3>
+        <div class="role">Founder &amp; CEO &middot; RN, BSN</div>
+        <p>A registered nurse since 2005 with her Bachelor of Science in Nursing from San Jose State University, Jamie founded Injected Artistry to deliver aesthetics the way a nurse would: safely, honestly, and with real care for the person in the chair.</p>
+      </div>
+    </div>
+    <div class="lead-card">
+      <div class="av">KS</div>
+      <div>
+        <h3>Dr. Ken Starr</h3>
+        <div class="role">Medical Director &middot; M.D., FACEP</div>
+        <p>A recognized authority in addiction medicine and wellness, Dr. Starr founded the clinic in 2012 and provides the physician oversight behind every protocol, so each treatment meets a true medical standard.</p>
+      </div>
+    </div>
+  </div>
+  <p class="team-rest">Supported by a full team of registered nurses and medical assistants, including <b>Christine Rochon, RN</b>, <b>Jeannette Vela, RN</b>, <b>Shannon Maguire, RN</b> and <b>Claire Taylor, RN</b>.</p>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Loved on the Peninsula</div>
+      <h2>5.0 stars, in their words</h2>
+      <p>Rated 5.0 across Yelp and Birdeye by the people who keep coming back.</p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <q>Jamie is incredible. She always takes the time to listen, offer thoughtful advice, and I leave feeling refreshed, confident, and in great spirits.</q>
+        <div class="who">Verified Patient<span>Google Review</span></div>
+      </div>
+      <div class="rev">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <q>Absolutely amazing. The people here are so kind and helpful. Nurses are well trained and professional.</q>
+        <div class="who">Marvin G.<span>Birdeye Review</span></div>
+      </div>
+      <div class="rev">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <q>I absolutely love this place and always look forward to coming in. Every visit is a true pleasure!</q>
+        <div class="who">Olga R.<span>Birdeye Review</span></div>
+      </div>
+      <div class="rev">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <q>Highly recommend the IV Lounge. I have been going for several years for my health maintenance.</q>
+        <div class="who">Juliana C.<span>Birdeye Review</span></div>
+      </div>
+      <div class="rev">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <q>These gals are so professional. I was treated very well while I had my IV drip enjoying the private room.</q>
+        <div class="who">Verified Patient<span>Birdeye Review</span></div>
+      </div>
+      <div class="rev">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <q>Jamie has taken care of my family consistently for over a year now, and her service and what she has to offer is extraordinary.</q>
+        <div class="who">Verified Patient<span>Yelp Review</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPECIALS ============ -->
+<section class="specials">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--gold-soft)">This month at the lounge</div>
+    <h2>Current specials</h2>
+    <div class="spec-list">
+      <div class="row"><span>Botox or Jeuveau</span><b>$10 / unit</b></div>
+      <div class="row"><span>Sunkissed IV &middot; 1000ml saline</span><b>$125</b></div>
+      <div class="row"><span>B12 or Ultra Burn shot</span><b>$25</b></div>
+      <div class="row"><span>Hair Restoration &middot; ALMA TED</span><b>$880 / session</b></div>
+      <div class="row"><span>Energized IV &middot; 1000ml NS</span><b>$150</b></div>
+      <div class="row"><span>All supplements</span><b>25% off</b></div>
+    </div>
+    <small>Sample pricing shown for demonstration. Specials rotate monthly, call or text 831-920-9359 to confirm what is running now.</small>
+  </div>
+</section>
+
+<!-- ============ VISIT / LOCATIONS ============ -->
+<section class="wrap" id="visit">
+  <div class="sec-head">
+    <div class="eyebrow">Two ways to be seen</div>
+    <h2>Visit the lounge, or we come to you</h2>
+  </div>
+  <div class="loc-grid">
+    <div class="loc">
+      <span class="kind">The IV Lounge</span>
+      <h3>261 Webster Street</h3>
+      <div class="line"><b>Monterey, CA 93940</b></div>
+      <div class="line">Call or text: <b>831-920-9359</b></div>
+      <div class="hours">
+        <div class="h"><span>Monday &ndash; Tuesday</span><b>8:00am &ndash; 4:00pm</b></div>
+        <div class="h"><span>Wednesday &ndash; Thursday</span><b>9:00am &ndash; 6:00pm</b></div>
+        <div class="h"><span>Friday</span><b>8:00am &ndash; 4:00pm</b></div>
+        <div class="h"><span>Saturday</span><b>10:00am &ndash; 2:00pm</b></div>
+        <div class="h"><span>Sunday</span><b>Closed</b></div>
+      </div>
+      <a href="tel:8319209359" class="btn btn-navy" style="margin-top:24px">Book the Lounge</a>
+    </div>
+    <div class="loc">
+      <span class="kind">Mobile Service</span>
+      <h3>We come to you</h3>
+      <div class="line"><b>Across the Monterey Peninsula</b></div>
+      <div class="line">Botox, filler &amp; Plasma Fibroblast, in your home, office or venue.</div>
+      <div class="line">Call or text: <b>831-402-4465</b></div>
+      <div class="hours">
+        <div class="h"><span>Service area</span><b>Monterey, Carmel, Pebble Beach</b></div>
+        <div class="h"><span>Also serving</span><b>Carmel-by-the-Sea, Pacific Grove</b></div>
+        <div class="h"><span>Booking</span><b>By appointment</b></div>
+      </div>
+      <a href="tel:8314024465" class="btn btn-navy" style="margin-top:24px">Book Mobile Service</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--gold-soft)">Ready when you are</div>
+    <h2>Your best self is <em>one visit</em> away.</h2>
+    <p>Book a treatment at the Monterey lounge or schedule mobile service across the Peninsula. A real nurse will take care of the rest.</p>
+    <div class="hero-cta">
+      <a href="tel:8319209359" class="btn btn-gold">Call or Text 831-920-9359</a>
+      <a href="#services" class="btn btn-outline">Explore Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="brand" style="margin-bottom:16px">
+          <div class="brand-mark">IA</div>
+          <div><div class="brand-name">Injected Artistry</div><div class="brand-sub">Med Spa &amp; IV Lounge</div></div>
+        </div>
+        <p style="max-width:300px">Nurse-led aesthetics and wellness for the Monterey Peninsula. Physician-founded in 2012.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <a href="#">261 Webster Street</a>
+        <a href="#">Monterey, CA 93940</a>
+        <a href="tel:8319209359">Lounge: 831-920-9359</a>
+        <a href="tel:8314024465">Mobile: 831-402-4465</a>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#services">Services</a>
+        <a href="#lounge">The IV Lounge</a>
+        <a href="#team">Our Team</a>
+        <a href="#reviews">Reviews</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Injected Artistry, Inc. All rights reserved.</span>
+      <span>Sample concept site &middot; designed for Injected Artistry</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ STRUCTURED DATA (the AEO fix) ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "@id": "https://injectedartistry.com/#business",
+  "name": "Injected Artistry",
+  "alternateName": "IV Lounge by Injected Artistry",
+  "description": "Nurse-led med spa and IV Lounge serving the Monterey Peninsula. Botox, fillers, IV hydration, peptide therapy, weight loss and aesthetics, in-lounge or mobile. Physician-founded in 2012.",
+  "url": "https://injectedartistry.com/",
+  "telephone": "+1-831-920-9359",
+  "email": "injected_artistry@yahoo.com",
+  "foundingDate": "2012",
+  "priceRange": "$$",
+  "image": "https://injectedartistry.com/wp-content/uploads/2022/04/injected_artistry_cover_mj-1.jpg",
+  "medicalSpecialty": "PlasticSurgery",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "261 Webster Street",
+    "addressLocality": "Monterey",
+    "addressRegion": "CA",
+    "postalCode": "93940",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 36.5969,
+    "longitude": -121.8961
+  },
+  "areaServed": [
+    {"@type":"City","name":"Monterey"},
+    {"@type":"City","name":"Carmel-by-the-Sea"},
+    {"@type":"City","name":"Pebble Beach"},
+    {"@type":"City","name":"Pacific Grove"},
+    {"@type":"City","name":"Carmel"}
+  ],
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Friday"],"opens":"08:00","closes":"16:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Wednesday","Thursday"],"opens":"09:00","closes":"18:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"14:00"}
+  ],
+  "founder": [
+    {"@type":"Person","name":"Jamie Slovenski","jobTitle":"Founder & CEO, RN, BSN"},
+    {"@type":"Person","name":"Ken Starr","jobTitle":"Medical Director, M.D., FACEP"}
+  ],
+  "sameAs": [
+    "https://www.facebook.com/InjectedArtistry/",
+    "https://www.instagram.com/injectedartistry/",
+    "https://www.yelp.com/biz/injected-artistry-monterey-2"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "31"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {"@type":"Rating","ratingValue":"5"},
+      "author": {"@type":"Person","name":"Marvin G."},
+      "reviewBody": "Absolutely amazing. The people here are so kind and helpful. Nurses are well trained and professional."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {"@type":"Rating","ratingValue":"5"},
+      "author": {"@type":"Person","name":"Olga R."},
+      "reviewBody": "I absolutely love this place and always look forward to coming in. Every visit is a true pleasure!"
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {"@type":"Rating","ratingValue":"5"},
+      "author": {"@type":"Person","name":"Juliana C."},
+      "reviewBody": "Highly recommend the IV Lounge. I have been going for several years for my health maintenance."
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Med Spa & Wellness Services",
+    "itemListElement": [
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Botox & Jeuveau Injectables"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Dermal Fillers"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"IV Hydration Therapy"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Peptide Therapy"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Hair Restoration (ALMA TED)"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Medical Weight Loss"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Aesthetics & Skincare"}}
+    ]
+  }
+}
+</script>
+
+<script>
+  // smooth-close mobile nav placeholder + subtle reveal
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',function(e){
+      const t=document.querySelector(this.getAttribute('href'));
+      if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
+    });
+  });
+</script>
+
+</body>
+</html>
