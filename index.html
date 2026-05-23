@@ -132,6 +132,11 @@
   .intro-figure{position:relative}
   .intro-img{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5}
   .intro-img img{width:100%;height:100%;object-fit:cover}
+  .founder-art{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5;display:flex;align-items:flex-end;justify-content:center;position:relative;background:radial-gradient(120% 90% at 50% 10%,#fff 0%,var(--cream) 45%,#e7ecf5 100%)}
+  .founder-art::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 45% at 50% 18%,rgba(194,162,95,.16),transparent 70%)}
+  .founder-art img{height:94%;width:auto;object-fit:contain;position:relative;z-index:1;filter:drop-shadow(0 18px 30px rgba(16,32,63,.18))}
+  .founder-art .cap{position:absolute;top:24px;left:0;right:0;text-align:center;z-index:2;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.35rem;color:var(--navy)}
+  .founder-art .cap small{display:block;font-family:'Inter';font-style:normal;font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);font-weight:600;margin-top:3px}
   .intro-figure::before{content:"";position:absolute;inset:-14px -14px 26px 26px;border:1px solid var(--line-gold);border-radius:var(--radius);z-index:-1}
   .intro-figure .est{position:absolute;left:-22px;bottom:30px;background:var(--gold);color:#3a2e12;border-radius:14px;padding:16px 20px;box-shadow:var(--shadow);text-align:center}
   .intro-figure .est b{font-family:'Cormorant Garamond',serif;font-size:2rem;display:block;line-height:1}
@@ -146,17 +151,17 @@
   .sec-head{text-align:center;max-width:660px;margin:0 auto 60px}
   .sec-head p{color:var(--muted);margin-top:14px;font-size:1.06rem}
   .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-  .card{background:#fff;border-radius:var(--radius);padding:38px 30px;border:1px solid var(--line);transition:.4s var(--ease);position:relative;overflow:hidden}
+  .card{background:#fff;border-radius:var(--radius);padding:40px 30px 36px;border:1px solid var(--line);transition:.4s var(--ease);position:relative;overflow:hidden;text-align:center}
   .card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold-soft),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
   .card:hover{transform:translateY(-8px);box-shadow:var(--shadow);border-color:transparent}
   .card:hover::before{transform:scaleX(1)}
-  .card .ic{width:60px;height:60px;border-radius:15px;background:linear-gradient(135deg,#fff,var(--cream));border:1px solid var(--line);display:grid;place-items:center;margin-bottom:22px;transition:.4s var(--ease)}
-  .card:hover .ic{background:var(--navy);border-color:var(--navy)}
-  .card .ic svg{width:30px;height:30px;stroke:var(--blue);fill:none;stroke-width:1.5;transition:.4s var(--ease)}
-  .card:hover .ic svg{stroke:var(--gold-soft)}
+  .card .ic{height:96px;display:flex;align-items:center;justify-content:center;margin:0 auto 22px;position:relative}
+  .card .ic::after{content:"";position:absolute;width:128px;height:128px;border-radius:50%;background:radial-gradient(circle,rgba(139,166,217,.16),transparent 68%);z-index:0}
+  .card .ic img{height:94px;width:auto;max-width:130px;object-fit:contain;position:relative;z-index:1;transition:transform .45s var(--ease)}
+  .card:hover .ic img{transform:scale(1.07) translateY(-2px)}
   .card h3{font-size:1.55rem;color:var(--navy);margin-bottom:9px}
   .card p{color:var(--muted);font-size:.95rem}
-  .card .tag{position:absolute;top:26px;right:26px;font-size:.62rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep);background:var(--cream);padding:5px 11px;border-radius:999px;border:1px solid var(--line-gold)}
+  .card .tag{position:absolute;top:22px;right:22px;font-size:.62rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep);background:var(--cream);padding:5px 11px;border-radius:999px;border:1px solid var(--line-gold)}
 
   /* LOUNGE */
   .lounge{background:var(--navy);color:#fff;overflow:hidden}
@@ -222,6 +227,28 @@
   .hours .h{display:flex;justify-content:space-between;font-size:.9rem;padding:6px 0;color:var(--muted)}
   .hours .h b{color:var(--ink);font-weight:500}
 
+  /* CONTACT / MAP */
+  .contact{background:var(--cream);padding-top:0}
+  .contact-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:#fff;border:1px solid var(--line)}
+  .contact-map{min-height:440px;position:relative}
+  .contact-map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.2) contrast(1.05)}
+  .contact-info{padding:48px 46px;display:flex;flex-direction:column;justify-content:center}
+  .contact-info h3{font-size:1.9rem;color:var(--navy);margin-bottom:4px}
+  .contact-info .ci-sub{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:22px}
+  .contact-info .ci-line{display:flex;gap:13px;align-items:flex-start;color:var(--muted);margin-bottom:14px;font-size:1rem}
+  .contact-info .ci-line svg{flex:none;width:19px;height:19px;stroke:var(--gold);fill:none;stroke-width:1.6;margin-top:3px}
+  .contact-info .ci-line a,.contact-info .ci-line b{color:var(--ink);font-weight:500}
+  .contact-info .ci-line a:hover{color:var(--gold-deep)}
+  .socials{display:flex;align-items:center;gap:14px;margin-top:26px;padding-top:24px;border-top:1px solid var(--line)}
+  .socials .lab{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .soc-ico{width:42px;height:42px;border-radius:50%;border:1px solid var(--line-gold);display:grid;place-items:center;transition:.3s var(--ease)}
+  .soc-ico svg{width:19px;height:19px;fill:var(--blue);transition:.3s var(--ease)}
+  .soc-ico:hover{background:var(--navy);border-color:var(--navy);transform:translateY(-3px)}
+  .soc-ico:hover svg{fill:var(--gold-soft)}
+  footer .socials{border-top:none;padding-top:0;margin-top:14px}
+  footer .soc-ico{border-color:rgba(255,255,255,.2)}
+  footer .soc-ico svg{fill:rgba(255,255,255,.8)}
+
   /* FINAL */
   .final{background:var(--navy);color:#fff;text-align:center;overflow:hidden}
   .final::before{content:"";position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(29,61,120,.55),transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);filter:blur(10px)}
@@ -249,6 +276,8 @@
     .grid,.rev-grid{grid-template-columns:1fr 1fr}
     .spec-list{grid-template-columns:1fr}
     .foot-top{grid-template-columns:1fr 1fr}
+    .contact-grid{grid-template-columns:1fr}
+    .contact-map{min-height:300px}
     section{padding:74px 0}
     .rating-badge{display:none}
     .intro-figure .est{left:10px}
@@ -345,8 +374,9 @@
     </p>
   </div>
   <div class="intro-figure reveal d2">
-    <div class="intro-img">
-      <img src="https://injectedartistry.com/wp-content/uploads/2022/04/injected_artistry_cover_mj-1.jpg" alt="Inside the Injected Artistry IV Lounge in Monterey" loading="lazy" />
+    <div class="founder-art">
+      <div class="cap">Jamie Slovenski<small>Founder &amp; CEO &middot; RN, BSN</small></div>
+      <img src="https://injectedartistry.com/wp-content/uploads/2022/04/injected-drawing-jamie-black-522.png" alt="Jamie Slovenski, RN BSN, founder of Injected Artistry" loading="lazy" />
     </div>
     <div class="est"><b>2012</b><span>Physician-founded</span></div>
   </div>
@@ -362,33 +392,33 @@
     </div>
     <div class="grid">
       <div class="card reveal">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M14 3l7 7-9 9-7 .9.9-7 8-8z"/><path d="M11 6l7 7"/></svg></div>
+        <div class="ic"><img src="https://injectedartistry.com/wp-content/uploads/2022/03/IMG_3637.jpg" alt="Injectables" loading="lazy" /></div>
         <span class="tag">Most booked</span>
         <h3>Injectables</h3>
         <p>Botox, Jeuveau and dermal fillers placed with an artist's eye for a refreshed, natural look that still moves like you.</p>
       </div>
       <div class="card reveal d1">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2s6 7 6 11a6 6 0 01-12 0c0-4 6-11 6-11z"/></svg></div>
+        <div class="ic"><img src="https://injectedartistry.com/wp-content/uploads/2022/03/IMG_3628.jpg" alt="IV Signature Drips" loading="lazy" /></div>
         <h3>IV Signature Drips</h3>
         <p>Custom hydration and vitamin infusions to support energy, recovery and immunity, sipped in your own private suite.</p>
       </div>
       <div class="card reveal d2">
-        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <div class="ic"><img src="https://injectedartistry.com/wp-content/uploads/2022/03/IMG_3635-1.jpg" alt="Aesthetics and skincare" loading="lazy" /></div>
         <h3>Aesthetics &amp; Skincare</h3>
         <p>Medical-grade facials, light therapy and skincare protocols built around your skin, not a one-size template.</p>
       </div>
       <div class="card reveal">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c-1 4-4 5-4 9a4 4 0 008 0c0-4-3-5-4-9z"/><path d="M9 21h6"/></svg></div>
+        <div class="ic"><img src="https://injectedartistry.com/wp-content/uploads/2024/07/Hair-restoration.png" alt="Hair restoration" loading="lazy" /></div>
         <h3>Hair Restoration</h3>
         <p>Advanced ALMA TED treatments to support fuller, healthier hair without surgery or downtime.</p>
       </div>
       <div class="card reveal d1">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 11-8-8"/><path d="M12 12l5-3"/><path d="M20 4l-3 5"/></svg></div>
+        <div class="ic"><img src="https://injectedartistry.com/wp-content/uploads/2023/09/Weight-Loss.png" alt="Weight and wellness" loading="lazy" /></div>
         <h3>Weight &amp; Wellness</h3>
         <p>Medically supervised weight programs, peptide therapy and hormone support to help you feel like yourself again.</p>
       </div>
       <div class="card reveal d2">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 11c0 5.5-7 10-7 10z"/></svg></div>
+        <div class="ic"><img src="https://injectedartistry.com/wp-content/uploads/2023/09/Oxygen.png" alt="Restorative therapies" loading="lazy" /></div>
         <h3>Restorative Therapies</h3>
         <p>Oxygen therapy, infrared sauna, leg compression and more to round out a complete wellness visit.</p>
       </div>
@@ -556,6 +586,33 @@
   </div>
 </section>
 
+<!-- CONTACT / MAP -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow center">Come see us</div>
+      <h2>Visit our Monterey lounge</h2>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="contact-map">
+        <iframe title="Injected Artistry, 261 Webster Street, Monterey CA" src="https://www.google.com/maps?q=261+Webster+Street,+Monterey,+CA+93940&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="contact-info">
+        <h3>Injected Artistry</h3>
+        <div class="ci-sub">IV Lounge &amp; Med Spa</div>
+        <div class="ci-line"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span><b>261 Webster Street</b><br/>Monterey, CA 93940</span></div>
+        <div class="ci-line"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg><span>Lounge: <a href="tel:8319209359">831-920-9359</a><br/>Mobile: <a href="tel:8314024465">831-402-4465</a></span></div>
+        <div class="ci-line"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg><span><a href="mailto:injected_artistry@yahoo.com">injected_artistry@yahoo.com</a></span></div>
+        <div class="socials">
+          <span class="lab">Follow us</span>
+          <a class="soc-ico" href="https://www.facebook.com/InjectedArtistry/" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg></a>
+          <a class="soc-ico" href="https://www.instagram.com/injectedartistry/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4a3.7 3.7 0 01-1.4-.9 3.7 3.7 0 01-.9-1.4c-.2-.4-.3-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.3 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1a3.5 3.5 0 00-.8-1.3 3.5 3.5 0 00-1.3-.8c-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 110 9.8 4.9 4.9 0 010-9.8zm0 8.1a3.2 3.2 0 100-6.4 3.2 3.2 0 000 6.4zm6.3-8.3a1.15 1.15 0 11-2.3 0 1.15 1.15 0 012.3 0z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FINAL -->
 <section class="final">
   <div class="wrap reveal">
@@ -579,6 +636,10 @@
           <div><div class="brand-name">Injected Artistry</div><div class="brand-sub">Med Spa &amp; IV Lounge</div></div>
         </div>
         <p style="max-width:300px">Nurse-led aesthetics and wellness for the Monterey Peninsula. Physician-founded in 2012.</p>
+        <div class="socials">
+          <a class="soc-ico" href="https://www.facebook.com/InjectedArtistry/" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg></a>
+          <a class="soc-ico" href="https://www.instagram.com/injectedartistry/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4a3.7 3.7 0 01-1.4-.9 3.7 3.7 0 01-.9-1.4c-.2-.4-.3-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.3 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1a3.5 3.5 0 00-.8-1.3 3.5 3.5 0 00-1.3-.8c-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 110 9.8 4.9 4.9 0 010-9.8zm0 8.1a3.2 3.2 0 100-6.4 3.2 3.2 0 000 6.4zm6.3-8.3a1.15 1.15 0 11-2.3 0 1.15 1.15 0 012.3 0z"/></svg></a>
+        </div>
       </div>
       <div>
         <h4>Visit</h4>
