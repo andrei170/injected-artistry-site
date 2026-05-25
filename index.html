@@ -210,6 +210,17 @@
   .rev .who{margin-top:auto;padding-top:20px;font-weight:600;color:var(--navy);font-size:.9rem}
   .rev .who span{display:block;font-weight:400;color:var(--muted);font-size:.78rem;margin-top:2px}
 
+  /* FAQ */
+  .faq{background:var(--paper)}
+  .faq-list{max-width:820px;margin:0 auto}
+  .faq-item{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:14px;overflow:hidden;transition:.3s var(--ease)}
+  .faq-item[open]{box-shadow:var(--shadow);border-color:var(--line-gold)}
+  .faq-item summary{list-style:none;cursor:pointer;padding:23px 28px;display:flex;justify-content:space-between;align-items:center;gap:18px;font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);font-weight:500}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary .pm{flex:none;width:26px;height:26px;border-radius:50%;border:1px solid var(--gold);color:var(--gold-deep);display:grid;place-items:center;font-size:1.15rem;line-height:1;transition:.3s var(--ease)}
+  .faq-item[open] summary .pm{transform:rotate(45deg);background:var(--gold);color:#fff;border-color:var(--gold)}
+  .faq-item .ans{padding:0 28px 24px;color:var(--muted);font-size:1rem;max-width:700px}
+
   /* SPECIALS */
   .specials .wrap-outer{max-width:1180px;margin:0 auto;padding:0 26px}
   .specials .panel{background:linear-gradient(135deg,var(--navy),var(--blue));border-radius:26px;padding:64px 58px;color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow-lg)}
@@ -340,11 +351,11 @@
       <p class="lead">A botched result is not a refund, it is months of living with someone else's mistake. Injected Artistry places every needle in the hands of a licensed registered nurse, under a physician's oversight, so you walk out looking refreshed, never overdone.</p>
       <p class="hero-byline">Led by <b>Jamie Slovenski, RN BSN</b>, a registered nurse with 16 years of hospital ICU experience, alongside medical director <b>Dr. Ken Starr, MD, FACEP</b>.</p>
       <div class="hero-cta">
-        <a href="#visit" class="btn btn-gold">Book a Free Consultation</a>
+        <a href="#visit" class="btn btn-gold">Book Your Visit</a>
         <a href="tel:8319209359" class="btn btn-outline">Call or Text 831-920-9359</a>
       </div>
       <div class="hero-stats">
-        <div class="hs"><b>5.0&#9733;</b><span>30+ five-star reviews on Google, Yelp &amp; Birdeye</span></div>
+        <div class="hs"><b>5.0&#9733;</b><span>Rated 5.0 across Google, Yelp &amp; Birdeye</span></div>
         <div class="hs"><b>RN-led</b><span>Every treatment by a licensed registered nurse</span></div>
         <div class="hs"><b>Since 2012</b><span>Physician medical director on every protocol</span></div>
       </div>
@@ -541,6 +552,25 @@
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow center">Before you book</div>
+      <h2>Your questions, answered honestly</h2>
+      <p>The things every new patient wants to know before they trust someone with their face and their health.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal"><summary>Who actually performs my treatment?<span class="pm">+</span></summary><div class="ans">Every injectable and IV is administered by a licensed registered nurse, under the oversight of our medical director, Dr. Ken Starr, MD. You are never handed off to an unlicensed technician.</div></details>
+      <details class="faq-item reveal"><summary>Do I need a consultation first?<span class="pm">+</span></summary><div class="ans">Yes. Every new patient starts with a consultation so we can review your history and your goals and make sure a treatment is right for you before anything is scheduled.</div></details>
+      <details class="faq-item reveal"><summary>Will I look overdone or frozen?<span class="pm">+</span></summary><div class="ans">Our approach is deliberately conservative. The goal is for you to look like a rested version of yourself, never "done." We would rather start subtle and build than overcorrect.</div></details>
+      <details class="faq-item reveal"><summary>Does it hurt?<span class="pm">+</span></summary><div class="ans">Most patients describe injectables as a quick pinch. We take it at your pace and use techniques to keep you comfortable from start to finish.</div></details>
+      <details class="faq-item reveal"><summary>Where are you, and can you come to me?<span class="pm">+</span></summary><div class="ans">You can see us at our private lounge at 261 Webster Street in Monterey, or we can bring mobile service to you across the Peninsula, including Carmel, Pebble Beach and Pacific Grove.</div></details>
+      <details class="faq-item reveal"><summary>What will it cost?<span class="pm">+</span></summary><div class="ans">It depends on the treatment and what you actually need, which we go over together in your consultation. We also run monthly specials. No pressure, and no hard sell.</div></details>
+    </div>
+  </div>
+</section>
+
 <!-- SPECIALS -->
 <section class="specials">
   <div class="wrap-outer">
@@ -726,7 +756,7 @@
     "https://www.instagram.com/injectedartistry/",
     "https://www.yelp.com/biz/injected-artistry-monterey-2"
   ],
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "31" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "22" },
   "review": [
     {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Marvin G."},"reviewBody":"Absolutely amazing. The people here are so kind and helpful. Nurses are well trained and professional."},
     {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Olga R."},"reviewBody":"I absolutely love this place and always look forward to coming in. Every visit is a true pleasure!"},
@@ -750,6 +780,21 @@
       {"@type":"Offer","itemOffered":{"@type":"Service","name":"Restorative Therapies (Oxygen, Infrared Sauna, Compression)"}}
     ]
   }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Who actually performs my treatment?","acceptedAnswer":{"@type":"Answer","text":"Every injectable and IV is administered by a licensed registered nurse, under the oversight of our medical director, Dr. Ken Starr, MD. You are never handed off to an unlicensed technician."}},
+    {"@type":"Question","name":"Do I need a consultation first?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every new patient starts with a consultation so we can review your history and goals and make sure a treatment is right for you before anything is scheduled."}},
+    {"@type":"Question","name":"Will I look overdone or frozen?","acceptedAnswer":{"@type":"Answer","text":"Our approach is deliberately conservative. The goal is for you to look like a rested version of yourself, never done. We would rather start subtle and build than overcorrect."}},
+    {"@type":"Question","name":"Does it hurt?","acceptedAnswer":{"@type":"Answer","text":"Most patients describe injectables as a quick pinch. We take it at your pace and use techniques to keep you comfortable from start to finish."}},
+    {"@type":"Question","name":"Where are you located, and can you come to me?","acceptedAnswer":{"@type":"Answer","text":"You can see us at our private lounge at 261 Webster Street in Monterey, or we can bring mobile service to you across the Monterey Peninsula, including Carmel, Pebble Beach and Pacific Grove."}},
+    {"@type":"Question","name":"What will it cost?","acceptedAnswer":{"@type":"Answer","text":"It depends on the treatment and what you need, which we go over together in your consultation. We also run monthly specials, with no pressure and no hard sell."}}
+  ]
 }
 </script>
 
