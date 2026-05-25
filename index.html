@@ -118,6 +118,12 @@
   .scroll-cue{position:absolute;left:50%;bottom:30px;transform:translateX(-50%);z-index:3;color:rgba(255,255,255,.6);font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:10px}
   .scroll-cue .line{width:1px;height:42px;background:linear-gradient(rgba(255,255,255,.6),transparent);animation:drop 2s var(--ease) infinite}
   @keyframes drop{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+  /* hero authority byline + social-proof stat bar */
+  .hero-byline{font-size:1.02rem;color:rgba(255,255,255,.85);max-width:580px;margin:0 0 32px;padding-left:18px;border-left:2px solid var(--gold-soft);line-height:1.55}
+  .hero-byline b{color:var(--gold-soft);font-weight:600}
+  .hero-stats{display:flex;gap:34px;flex-wrap:wrap;max-width:660px;margin-top:42px;padding-top:28px;border-top:1px solid rgba(255,255,255,.2)}
+  .hero-stats .hs b{display:block;font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:var(--gold-soft);line-height:1}
+  .hero-stats .hs span{display:block;font-size:.76rem;color:rgba(255,255,255,.8);margin-top:8px;line-height:1.45;max-width:180px;letter-spacing:.01em}
 
   /* CREDIBILITY STRIP */
   .creds{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding:30px 0}
@@ -329,20 +335,19 @@
   <div class="hero-glow"></div>
   <div class="wrap">
     <div class="hero-inner">
-      <div class="eyebrow light">Monterey Peninsula &middot; Since 2012</div>
-      <h1>Beauty, wellness &amp; <em>artistry</em>, by nurses who care.</h1>
-      <p class="lead">Botox, fillers, IV therapy, peptides and whole-person wellness, delivered in our private Monterey lounge or brought to your door across the Peninsula.</p>
+      <div class="eyebrow light">Monterey Peninsula &middot; Nurse-Led Med Spa</div>
+      <h1>When it's your face on the line, <em>who injects you</em> decides everything.</h1>
+      <p class="lead">A botched result is not a refund, it is months of living with someone else's mistake. Injected Artistry places every needle in the hands of a licensed registered nurse, under a physician's oversight, so you walk out looking refreshed, never overdone.</p>
+      <p class="hero-byline">Led by <b>Jamie Slovenski, RN BSN</b>, a registered nurse with 16 years of hospital ICU experience, alongside medical director <b>Dr. Ken Starr, MD, FACEP</b>.</p>
       <div class="hero-cta">
-        <a href="#visit" class="btn btn-gold">Book Your Visit</a>
+        <a href="#visit" class="btn btn-gold">Book a Free Consultation</a>
         <a href="tel:8319209359" class="btn btn-outline">Call or Text 831-920-9359</a>
       </div>
-    </div>
-  </div>
-  <div class="rating-badge">
-    <div class="num">5.0</div>
-    <div class="meta">
-      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <small>Across 30+ reviews</small>
+      <div class="hero-stats">
+        <div class="hs"><b>5.0&#9733;</b><span>30+ five-star reviews on Google, Yelp &amp; Birdeye</span></div>
+        <div class="hs"><b>RN-led</b><span>Every treatment by a licensed registered nurse</span></div>
+        <div class="hs"><b>Since 2012</b><span>Physician medical director on every protocol</span></div>
+      </div>
     </div>
   </div>
   <div class="scroll-cue"><span>Explore</span><span class="line"></span></div>
@@ -480,6 +485,11 @@
     </div>
   </div>
   <p class="team-rest reveal">Supported by a full team of registered nurses and medical assistants, including <b>Christine Rochon, RN BSN</b> (Clinical Manager), <b>Jeannette Vela, RN BSN</b>, <b>Shannon Maguire, RN MN</b> and <b>Claire Taylor, RN</b>.</p>
+  <div class="reveal" style="display:flex;flex-wrap:wrap;justify-content:center;gap:13px;margin-top:34px">
+    <span style="font-size:.82rem;font-weight:600;letter-spacing:.02em;color:var(--navy);background:#fff;border:1px solid var(--line-gold);border-radius:999px;padding:12px 22px">Every injector is a licensed RN</span>
+    <span style="font-size:.82rem;font-weight:600;letter-spacing:.02em;color:var(--navy);background:#fff;border:1px solid var(--line-gold);border-radius:999px;padding:12px 22px">Every protocol signed off by a board-certified physician</span>
+    <span style="font-size:.82rem;font-weight:600;letter-spacing:.02em;color:var(--navy);background:#fff;border:1px solid var(--line-gold);border-radius:999px;padding:12px 22px">Every visit starts with a real consultation</span>
+  </div>
 </section>
 
 <!-- REVIEWS -->
@@ -488,7 +498,7 @@
     <div class="sec-head reveal">
       <div class="eyebrow center">Loved on the Peninsula</div>
       <h2>5.0 stars, in their words</h2>
-      <p>Rated 5.0 across Yelp and Birdeye by the people who keep coming back.</p>
+      <p>Rated 5.0 across Google, Yelp and Birdeye by the people who keep coming back, year after year. Notice how often they mention feeling safe, listened to and well cared for.</p>
     </div>
     <div class="rev-grid">
       <div class="rev reveal">
